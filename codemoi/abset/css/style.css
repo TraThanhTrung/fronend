@@ -1,0 +1,271 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#Header{
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0px 20px;
+}
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between  ;
+}
+.container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+}
+
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;   
+}
+
+
+
+
+#logo img{
+    max-width: 160.8px;
+    height: auto;
+    padding: 21px;
+}
+#main-menu{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#main-menu .item a   {
+    color: #000000;
+    text-decoration: none;
+
+}
+
+#main-menu .item .sub-menu li a i{
+    position: relative;
+}
+
+#main-menu .item ul.sub-menu{
+    position: absolute;
+    background-color: #ffffff;
+    padding: 0;
+    display: none;
+}
+#main-menu .item ul.sub-menu li {
+    list-style: none;
+    padding: 15px 5px;
+    width: 100%;
+}
+#main-menu>li.item {
+    padding: 20px 29px ;
+    font-weight: 700;
+}
+#main-menu .item a:hover  {
+    color: rgb(22, 8, 220);
+}
+#main-menu li:hover ul.sub-menu{
+    display: block;
+}
+#main-menu .item a{
+    text-decoration: none;
+}
+.container .item a i{
+    padding-right: 5px;
+}
+
+.midle .img img{
+    margin: 50px 100px;
+}
+.midle .title h4{
+    font-size: 42px;
+    color: #ff6c4b;
+    padding: 0px;
+    margin: 0px;
+    justify-content: center;
+}
+.midle{
+    text-align: center;
+    padding:10px;
+    background-color: #f6f5f5;
+    height: 110vh;
+    
+
+   
+}
+.reset {
+    padding-top: 50px;
+}
+.content {
+    font-size: 21px;
+    color: #2221269C;
+    margin-left: 0px 20px;
+}
+.reset a{
+    text-decoration: none;
+    font-size: 15px ;
+    padding: 15px 30px;
+    background:  #3D53F2 ;
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid #001eff;
+    font-weight: bold;
+    color: #ffffff;
+}
+.bottom .click{
+    text-decoration: none;
+    font-size: 15px;
+    background: #0826eb;
+    padding: 12px 30px;
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+.bottom{
+    background-color: #201d28;
+    margin-top: 30px;
+    padding: 100px;
+    height: 80vh;
+}
+
+.bottom p{
+    color: #ffffff91;
+    font-size: 17px;
+    padding: 6px 0px 25px;
+}
+.bottom h5{
+    font-size: 21px;
+    color: #ffffff;
+}
+.bottom .text{
+    padding: 10px 30px 10px 5px;
+}
+.bottom li {
+    list-style: none;
+    padding-bottom: 15px;
+}
+.bottom .c a:hover {
+    color: #238AF9;
+}
+.bottom li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 17px;
+    
+}
+.text{
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 15px;
+    padding:10px 30px 10px 5px;
+}
+.bottom .note{
+    font-size: 15px;
+    color: #ffffff91;
+    margin-right: 35px;
+}
+.row{
+    width: 100%;
+}
+.row-2{
+    display: flex;
+    width: 100%;
+}
+.row-2 img{
+    width: 190px;
+}
+.row-2 .col-lg-3{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.row-2 .p{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.row-2 .img{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+@media(max-width:1024px){
+    
+    .col-12{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    #main-menu{
+        display: none;
+    }
+    .container img{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .midle .img img{
+        margin: 0;
+        height: 50%;
+        width: 70%;
+    }
+    .midle .title h4{
+        font-size: 12px;
+    }
+    .midle p{
+        font-size: 10px;
+    }
+    .bottom{
+        height: 100vh;
+        margin: 0px;
+        padding: 30px 30px 0px 5px;
+    }
+    
+}
+@media(min-width:1025px){
+    
+}
+@media(max-width:480px){
+
+    .col-12{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    #main-menu{
+        display: none;
+    }
+    .container img{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .midle{
+        flex: 0 0 100% ;
+        max-width: 100%;
+    }
+    .bottom{
+        height: 100vh;
+        margin: 0px;
+        padding: 30px 30px 0px 5px;
+    }
+}
+
+    
+
+
+
+
+
+
+
+
+
+
+

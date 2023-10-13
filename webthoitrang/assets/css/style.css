@@ -1,0 +1,256 @@
+/*===============reset css===================*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:  sans-serif;
+}
+
+html {
+    font-size: 80.5%;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+    /* xuống dòng với mỗi thẻ img   */
+}
+
+
+.d-flex {
+    display: flex;
+}
+
+.text-align-center {
+    text-align: center;
+    /* nội dung sẽ nằm giữa theo khối  */
+}
+
+.justify-content-space-between{
+    justify-content: space-between;
+    /* cách một khoảng bằng nhau giữa các content */
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.align-items-flex-end{
+    align-items: flex-end;
+}
+
+.align-items-flex-start {
+    align-items: flex-start;
+}
+
+.flex-direction-column{
+    flex-direction: column;
+}
+
+
+/* HEAADER */
+
+.Header{
+    background-image: url(/assets/images/footer-bg-1.png);
+    background-size: cover ;
+    background-position: center;
+    background-repeat: no-repeat; 
+    position: relative; 
+}
+
+
+.HeaderTop_section{
+    height:6rem;
+    border-bottom: 2px solid #ecdfdf;
+}
+
+.HeaderTop_section .list .list_item {
+    padding: 0 10px;
+    font-size: 16px;
+    border-right: 1px solid #221c1c;
+}
+
+.HeaderTop_section .list .list_item_1 {
+    padding: 0 10px;
+}
+
+.HeaderTop_section .list a{
+    color: #090202;
+    font-size: 16px;
+}
+
+.HeaderTop_section .list a:hover{
+    color: rgb(16, 8, 236);
+}
+
+.HeaderTop_section .contact .phone{
+    margin-right: 20px;
+}
+
+.HeaderTop_section .contact .time{
+    margin-right:20px;
+}
+
+.HeaderTop_section .contact a i {
+    font-size: 16px;
+    color: #050d01;
+    margin-right: 7px;
+}
+
+.HeaderTop_section .contact a {
+    color: #0a0707;
+    font-size: 16px;
+}
+
+.HeaderTop_section .contact .list_network .list_item {
+    padding-left: 8px;
+}
+
+.HeaderTop_section .contact .list_network .list_item a i{
+    color: #090202;
+    font-size: 18px;
+}
+
+@media(max-width:922px) {
+    .headerTop_section {
+        display: none;
+    }
+}
+
+/* Header_section center */
+
+.HeaderCenter_section{
+    padding: 2rem 3rem;
+}
+
+.HeaderCenter_section .list_services .list_item {
+    margin-right: 25px;
+}
+
+.HeaderCenter_section .list_services .list_item .picture {
+    margin-right: 10px;
+}
+
+.HeaderCenter_section .list_services .list_item .picture img{
+    width: 4rem;
+}
+
+
+.HeaderCenter_section .list_services .list_item .tittle{
+    color: #050d01;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+.HeaderCenter_section .list_services .list_item .describe{
+    font-size: 17px;
+    color: #050d01;
+}
+
+.menu_bar{
+    color: #050d01;
+    font-size: 15px;
+    display: inline-block;
+    padding-left: 15px;
+}
+
+@media(min-width:769px){
+    .menu_bar{
+        display:none;
+    }
+}
+@media(max-width:768px){
+    .menu_bar{
+        display: block;
+    }
+    .list_services{
+        display: none;
+    }
+}
+
+@media(max-width:575px){
+    .HeaderCenter_section .logo img{
+        width: 17rem;
+    }
+    .HeaderCenter_section{
+        padding: 2rem 0;
+    }
+}
+
+.HeaderBottom_section{
+    background-color: #699551;
+    padding: 0 3rem;
+}
+
+.HeaderBottom_section .list_menu .list_item{
+    position: relative;
+    padding: 20px 12px;
+}
+
+.HeaderBottom_section .list_menu .list_item .tittle{
+    font-size: 17px;
+    font-weight: 500;
+    color: aliceblue;
+}
+
+.HeaderBottom_section .list_menu .list_item .tittle i{
+    padding-left: 5px;
+}
+
+.HeaderBottom_section .menu .list_item .list{
+    position: absolute;
+    top:100%;
+    left: 0;
+
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 5px 5px 5px #b4b4b493;
+}
+
+.HeaderBottom_section .list_menu .list_item:hover .list {
+    display: block;
+    width: 10rem;
+    transition: 0.7s;
+    z-index: 9;
+} 
+
+.HeaderBottom_section .list_menu .list_item .list .list_option a{
+    display:block;
+    
+}
+
+/* .HeaderBottom_section .menu .list_item .list_option a:hover{
+    color: #56e409;
+}
+
+.HeaderBottom_section .menu .list_item {
+    padding-left: 15px;
+}
+ 
+.HeaderBottom_section .list_menu .list_item a{
+    color: aliceblue;
+    font-size: 14px;
+    display: inline-block;
+} */ 
+
+
+
+
+

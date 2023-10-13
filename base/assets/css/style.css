@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    color: white;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.d-flex{
+    display: flex;
+    align-items: center;
+}
+
+.button{
+    padding: 1.3rem 2.5rem;
+    color: white;
+    border: 1px solid white;
+    background-color: hotpink;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+header{
+    background-color: rgb(94, 4, 94);
+    padding: 3rem 0;
+    position: sticky;
+    z-index: 999;
+}
+
+header .header__content{
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    font-weight: 700;
+}
+
+header .header__content .header__title {
+    font-size: 3.7rem;
+    
+}
+header .header__content .header__navbar li{
+    margin: 0 3rem;
+}
+
+header .header__content .header__navbar .active a{
+    color: hotpink;
+}
+
+header .header__content .header__navbar li a{
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    color: white;
+    transition: 0.5s;
+}
+
+header .header__content .header__navbar li a:hover{ 
+    color: hotpink;
+}
+
+.carousel {
+    background-image: url(../img/b3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 70rem;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.carousel .carousel__content h1{
+    font-size: 5rem;
+}
+
+.carousel .carousel__content p{
+    margin: 2rem 0 3rem;
+    font-size: 2rem;
+}
+
+.carousel .carousel__content .button__carousel{
+    transition: all 0.5s ease-in;
+}
+
+.carousel .carousel__content .button__carousel:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
