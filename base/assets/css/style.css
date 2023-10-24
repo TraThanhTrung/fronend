@@ -22,6 +22,11 @@ a{
     text-decoration: none;
 }
 
+img{
+    display: block;
+    width: 100%;
+}
+
 .d-flex{
     display: flex;
     align-items: center;
@@ -100,4 +105,32 @@ header .header__content .header__navbar li a:hover{
     background-color: white;
     color: black;
     border: 1px solid black;
+}
+
+.intro .intro__content{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.intro .intro__content .intro__item h3{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.intro .intro__content .intro__item p{
+    font-size: 1.6rem;
+    line-height: 2.9rem;
+}
+
+.intro .intro__content .intro__item:first-child{
+    background-color: aqua;
+}
+
+.intro .intro__content .intro__item:nth-child(2){
+    background-color:  aquamarine;
+}
+
+.intro .intro__content .intro__item:nth-child(3){
+    background-color:  aquamarine;
 }
