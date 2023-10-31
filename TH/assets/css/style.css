@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+html{
+    font-size: 62.5%;
+}
+
+img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}   
+
+a{
+    text-decoration: none;
+}
+
+
+
+.d-flex{
+    display: flex;
+    justify-content: center;
+}
+
+
+.image{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 5rem;
+    
+}
+
+.image .image__body{
+    background-color: rgba(13, 120, 27, 0.12);
+    border-radius: 2rem;
+    padding: 5rem 8rem;
+}
+
+
+
+.image .image__body .image__content{
+   
+}
+
+.image .image__body .image__content a{
+    padding: 1rem 4rem;
+    background-color: rgb(252, 252, 252);
+    margin-left: 3rem;
+    border-radius: 3rem;
+    color: green;
+    font-size: 1.6rem;
+    font-weight: 700    ;
+    border: .1rem solid green;
+    transition: all .5s;
+}
+
+.image .image__body .image__content .active{
+    background-color: green;
+    color: white;
+}
+
+
+
+.image .image__body .image__content a:hover{
+    background-color: green;
+    color: white;
+}
+
+.image .image__body .image__list{
+   margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+}
+
+.image .image__body .image__list .image__item{
+    max-height: 20rem;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.image .image__body .image__list .image__item img{
+    transition: all .7s;
+}
+
+.image .image__body .image__list .image__item:hover img{
+    transform: scale(2.5) rotate(90deg);
+}
+
+.hide{
+    display: none;
+}
+
+.display{
+    display: block;
+}
