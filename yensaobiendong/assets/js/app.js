@@ -108,13 +108,10 @@ document.querySelector('.next__partner i').addEventListener('click',()=>{
   showPartner()
 })
 
-
 let carIndex = 0;
 let cards = document.querySelectorAll('.card__item');
 console.log(cards);
 cards[cards.length - 1].style.display = 'none';
-
-
 
 let dots = document.querySelectorAll('.dot')
 
@@ -126,7 +123,6 @@ function showDot(){
 }
 
 document.querySelector('.prev__card i').addEventListener('click', () => {
-  
   carIndex--
     if(carIndex == -1){
       cards[carIndex+1].style.display = 'none'
@@ -141,6 +137,7 @@ document.querySelector('.prev__card i').addEventListener('click', () => {
     showDot()  
     
 });
+
 document.querySelector('.next__card i').addEventListener('click', (e) => {
     carIndex++
     console.log(carIndex)

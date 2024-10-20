@@ -319,7 +319,7 @@ header .header__content .header__navbar li a:hover{
 }
 
 .gallery .gallery__content .gallery__item:hover .gallery__overlay h3::after{
-    transform: translateY(1rem);
+    transform: translateY(10rem);
     opacity: 1;
 }
 

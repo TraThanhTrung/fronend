@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+	<!-- jQuery library -->
+	
+
+	<!-- Latest compiled JavaScript -->
+	
+
+</head>
+<body>
+	<div class="logo"></div>
+	<div class="container">
+		<h2>Thông tin sinh viên</h2>
+		<form>
+			<div class="form-group">
+				<label for="masv">Mã SV:</label>
+				<input type="text" class="form-control" id="masv" placeholder="Nhập MaSV" name="MaSV">
+			</div>
+			<div class="form-group">
+				<label for="hoten">Họ tên:</label>
+				<input type="text" class="form-control" id="hoten" placeholder="Nhập Họ tên" name="hoten">
+			</div>
+			<div class="form-group">
+				<label for="cmnd">CMND:</label>
+				<input type="text" class="form-control" id="cmnd" placeholder="Nhập CMND" name="cmnd">
+			</div>
+			<div class="form-group">
+				<label for="sdt">Điện thoại:</label>
+				<input type="text" class="form-control" id="sdt" placeholder="Nhập SDT" name="sdt">
+			</div>
+
+			<div class="form-group">
+				<label for="email">Email:</label>
+				<input type="email" class="form-control" id="email" placeholder="Nhập Email" name="email">
+			</div>
+			<div class="form-group">
+				<label for="Toan">Toán:</label>
+				<input type="number" class="form-control" id="Toan" placeholder="Nhập Toán" name="Toan">
+			</div>
+			<div class="form-group">
+				<label for="Ly">Lý:</label>
+				<input type="number" class="form-control" id="Ly" placeholder="Nhập Lý" name="Ly">
+			</div>
+			<div class="form-group">
+				<label for="Hoa">Hoa:</label>
+				<input type="number" class="form-control" id="Hoa" placeholder="Nhập Hóa" name="Hoa">
+			</div>
+			<br>
+			<button type="button" class="btn btn-success" onclick="ThemSinhVien()">Thêm sinh viên</button>
+			<button type="button" class="btn btn-primary" onclick="LuuThongTin()"> Lưu</button>
+		</form>
+		<div style="text-align: right">
+			<button class="btn btn-success" onclick="SetStorage()">Lưu storage</button>
+			<button class="btn btn-primary" onclick="GetStorage()">Lấy storage</button>
+			<button class="btn btn-danger" onclick="XoaSinhVien()">Xóa sinh viên</button>
+		</div>
+	</div>
+
+	
+	<br>
+	<div class="container">
+		<div class="right">
+			<div class="input-group">
+				<input type="text" id="tukhoa" onkeyup="TimKiemSinhVien()" onchange="TimKiemSinhVien()"
+					class="form-control" placeholder="Nhập vào họ tên ...">
+				<span class="input-group-btn">
+					<button class="btn btn-secondary" onclick="TimKiemSinhVien()" type="button">Tìm kiếm</button>
+				</span>
+			</div>
+			<br>
+			<div class="alert alert-success" id="ThongBao"></div>
+		</div>
+		<h2>Danh sách sinh viên</h2>
+		<p> </p>
+		<table id="TableSinhVien" class="table">
+			<thead>
+				<tr>
+					<th></th>
+					<th>MaSV</th>
+					<th>HoTen</th>
+					<th>Email</th>
+					<th>CMND</th>
+					<th>Điện thoại</th>
+					<th>Điểm TB</th>
+					<th>Xếp loại</th>
+				</tr>
+			</thead>
+			<tbody id="tbodySinhVien">
+				<tr>
+					<td></td>
+					<td>giatri cot 1</td>
+					<td>giatri cot 2</td>
+					<td>giatri cot 3</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	
+	<script src="SinhVien.js"></script>
+	<script src="DanhSachSinhVien.js"></script>
+	<script src="VaLiDaTion.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
